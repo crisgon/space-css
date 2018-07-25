@@ -1,0 +1,30 @@
+{
+  "name": "space-css",
+  "version": "1.0.0",
+  "description": "> A simple and beautiful css framework.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-sass",
+    "build-sass": "node-sass --output-style expanded  --include-path scss scss/space.scss   css/space.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crisgon/space-css.git"
+  },
+  "keywords": [
+    "framework",
+    "css"
+  ],
+  "author": "Cristiano Gonçalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crisgon/space-css/issues"
+  },
+  "homepage": "https://github.com/crisgon/space-css#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.2",
+    "nodemon": "^1.18.3"
+  }
+}
