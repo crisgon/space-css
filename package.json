@@ -4,8 +4,10 @@
   "description": "> A simple and beautiful css framework.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-sass",
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
     "build-sass": "node-sass --output-style expanded  --include-path scss scss/space.scss   css/space.css",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/space.css css/space.css",
+    "build-clean": "rimraf css",
     "deploy": "npm run build",
     "start": "npm run build-sass -- --watch"
   },
@@ -18,13 +20,16 @@
     "css"
   ],
   "author": "Cristiano Gonçalves",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/crisgon/space-css/issues"
   },
   "homepage": "https://github.com/crisgon/space-css#readme",
   "devDependencies": {
+    "autoprefixer": "^9.0.1",
     "node-sass": "^4.9.2",
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.3",
+    "postcss-cli": "^6.0.0",
+    "rimraf": "^2.6.2"
   }
 }
