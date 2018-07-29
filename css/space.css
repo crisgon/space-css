@@ -1,0 +1,113 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.space {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.space,
+.space-full {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: .5em;
+}
+
+.col {
+  display: block;
+  flex: 1 1 0;
+}
+
+.col-1, .col-2, .col-3, .col-third, .col-4, .col-5, .col-6, .col-half, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .col-1, .col-2, .col-3, .col-third, .col-4, .col-5, .col-6, .col-half, .col-7, .col-8, .col-9, .col-10, .col-11 {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-1 {
+    width: 7.5%;
+  }
+  .col-2 {
+    width: 15.5%;
+  }
+  .col-3, .col-third {
+    width: 23.95%;
+  }
+  .col-4 {
+    width: 32.4%;
+  }
+  .col-5 {
+    width: 40.85%;
+  }
+  .col-6, .col-half {
+    width: 49.3%;
+  }
+  .col-7 {
+    width: 57.75%;
+  }
+  .col-8 {
+    width: 66.2%;
+  }
+  .col-9 {
+    width: 74.65%;
+  }
+  .col-10 {
+    width: 83.1%;
+  }
+  .col-11 {
+    width: 91.55%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
