@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .03125em;
+}
+
+/*! ----------------------Headings-------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin-bottom: .5em;
+  line-height: 1.125em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.50em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/*! ----------------------Paragraphs-------------------*/
+
+p {
+  font-weight: 400;
+  line-height: 1.75em;
+}
