@@ -1,0 +1,68 @@
+.btn {
+  display: inline-block;
+  background-color: $light-color;
+  color: $dark-color;
+  text-decoration: none; 
+  box-sizing: border-box;
+  padding: .5em 1em;
+  margin: .125em 0;
+  border: 1px solid $light-color;
+  border-radius: .3em;
+  cursor: pointer;
+  transition: all .3s;
+
+  &-rounded { border-radius: 50px; }
+
+  &-square { border-radius: 0; }
+
+  &-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &[disabled] {
+    opacity: .7;
+    pointer-events: none;
+    cursor:not-allowed;
+  }
+}
+
+@each $color, $value in $btn-colors {
+  .btn-#{$color} {
+    background-color: $value;
+    border-color: $value;
+    color: $light-color;
+
+    &:hover,
+    &:after {
+      border-color: darken($value, 10%);
+      background-color: darken($value, 10%);
+    }
+  }
+}
+
+@each $color, $value in $btn-colors {
+  .btn-outline-#{$color} {
+    background-color: transparent;
+    border-color: $value;
+    color: $value;
+
+    &:hover,
+    &:focus {
+      border-color: $light-color;
+      background-color: $light-color;
+    }
+
+    &:active {
+      background-color: rgba($value, .2);
+    }
+  }
+}
+
+@each $size, $value in $btn-sizes {
+  .btn-#{$size} {
+    font-size: $value;
+  }
+}
