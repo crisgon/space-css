@@ -1,3 +1,4 @@
+$grid-max: 960px;
 $light-color: #ffffff;
 $dark-color: #181b20;
 $btn-colors:(
@@ -8,7 +9,7 @@ $btn-colors:(
   'danger': #e74c3c
 );
 $btn-sizes: (
-  'small': .75em,
+  'small': .75em, 
   'medium': 1.5em,
   'large': 2em
 ); 
