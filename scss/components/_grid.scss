@@ -41,6 +41,8 @@
   &-11,
   &-12 {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &-center {

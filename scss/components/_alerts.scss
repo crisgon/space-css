@@ -1,0 +1,17 @@
+.alert {
+  width: 100%;
+  text-align: initial;
+  color: $dark-color;
+  background-color: $light-color;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: .2em 0;
+  border-radius: .5em;
+}
+
+@each $color, $value in $colors {
+  .alert-#{$color} {
+    color: $light-color;
+    background-color: $value;
+  }
+}
