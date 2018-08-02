@@ -18,13 +18,14 @@
       text-align: center;
     }
 
-    section:nth-child(odd) div {
+    .space:nth-child(odd) div {
       background: #181B20;
     }
 
-    section:nth-child(even) div {
+    .space:nth-child(even) div {
       background: #16ACC8;
     }
+
   </style>
 </head>
 <body>
@@ -87,7 +88,7 @@
     <div class="col-half">
       <div class="space">
         <div class="col-7">7</div> 
-        <div class="col-5">5</div> 
+        <div class="col-7">7</div> 
       </div>
     </div>
     <div class="col-half">Half</div>
@@ -140,7 +141,7 @@
     <div class="col-4 col-gap-2">4</div>
   </section>
 
-  <section class="space">
+  <section class="space-full">
     <div class="col-12">
       <h1>Head 1</h1>
       <h2>Head 2</h2>
@@ -200,6 +201,54 @@
       <a href="#" class="btn btn-sucess">Link Button</a>
       <button class="btn btn-rounded btn-medium">Button</button>
       <input type="submit" class="btn btn-danger btn-large btn-full" value="Submit">
+    </div>
+  </section>
+
+  <section class="space-full">
+    <div class="col-12">
+      <div class="alert alert-danger">
+        Perigo!!
+      </div>
+
+      <div class="alert alert-primary">
+        Perigo!!
+      </div>
+
+      <div class="alert alert-info">
+        Perigo!!
+      </div>
+
+      <div class="alert alert-sucess">
+        Perigo!!
+      </div>
+
+      <div class="alert alert-warning">
+        Perigo!!
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="col-4">
+        <div class="alert alert-sucess">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iste ex omnis non repellendus, hic laboriosam neque quisquam, recusandae alias aspernatur nobis tempora ipsa praesentium deleniti eum dignissimos sequi impedit?
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="alert alert-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iste ex omnis non repellendus, hic laboriosam neque quisquam, recusandae alias aspernatur nobis tempora ipsa praesentium deleniti eum dignissimos sequi impedit?
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="alert alert-warning">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iste ex omnis non repellendus, hic laboriosam neque quisquam, recusandae alias aspernatur nobis tempora ipsa praesentium deleniti eum dignissimos sequi impedit?
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="alert alert-danger">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iste ex omnis non repellendus, hic laboriosam neque quisquam, recusandae alias aspernatur nobis tempora ipsa praesentium deleniti eum dignissimos sequi impedit?
+        </div>
+      </div>
     </div>
   </section>
 </body>
