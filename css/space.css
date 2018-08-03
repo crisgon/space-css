@@ -705,3 +705,58 @@ p {
   color: #ffffff;
   background-color: #e74c3c;
 }
+
+.table {
+  text-align: left;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table .thead-dark {
+  color: #ffffff;
+  background-color: #181b20;
+}
+
+.table .thead-light {
+  color: #181b20;
+  background-color: #ffffff;
+}
+
+.table thead tr {
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.table thead td,
+.table thead th,
+.table tbody td,
+.table tbody th {
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+.table-full {
+  width: 100%;
+}
+
+.table-bordered thead td,
+.table-bordered thead th,
+.table-bordered tbody td,
+.table-bordered tbody th {
+  border: 1px solid #bdc3c7;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #dcdde1;
+}
+
+.table-hover tbody tr {
+  transition: all .5s;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #bdc3c7;
+}
