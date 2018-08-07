@@ -760,3 +760,141 @@ p {
 .table-hover tbody tr:hover {
   background-color: #bdc3c7;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-horizontal {
+  flex-direction: row;
+}
+
+.form-label {
+  margin: .25em;
+}
+
+.form-field {
+  border-radius: .125em;
+  border: 1px solid #bdc3c7;
+  box-sizing: border-box;
+  padding: .5em;
+  margin: .25em;
+}
+
+.form-field-rounded {
+  border-radius: 50px;
+}
+
+.form-field[disabled] {
+  opacity: .7;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.form-select {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: .5em;
+}
+
+.form-select-rounded {
+  border-radius: 50px;
+}
+
+.form-radio {
+  position: relative;
+  box-sizing: border-box;
+  padding: .5em;
+}
+
+.form-radio-custom {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 0.5rem solid #dcdde1;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.form-radio input[type="radio"] {
+  margin-right: .5em;
+}
+
+input[type="radio"]:checked + .form-radio-custom {
+  border-color: gray;
+}
+
+.form-field-primary {
+  border: 1px solid #16acc8;
+  color: #16acc8;
+}
+
+.form-field-primary:focus {
+  border-color: rgba(22, 172, 200, 0.5);
+  outline: 2px solid #16acc8;
+}
+
+.form-field-info {
+  border: 1px solid #2e86de;
+  color: #2e86de;
+}
+
+.form-field-info:focus {
+  border-color: rgba(46, 134, 222, 0.5);
+  outline: 2px solid #2e86de;
+}
+
+.form-field-sucess {
+  border: 1px solid #26de81;
+  color: #26de81;
+}
+
+.form-field-sucess:focus {
+  border-color: rgba(38, 222, 129, 0.5);
+  outline: 2px solid #26de81;
+}
+
+.form-field-warning {
+  border: 1px solid #f1c40f;
+  color: #f1c40f;
+}
+
+.form-field-warning:focus {
+  border-color: rgba(241, 196, 15, 0.5);
+  outline: 2px solid #f1c40f;
+}
+
+.form-field-danger {
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+}
+
+.form-field-danger:focus {
+  border-color: rgba(231, 76, 60, 0.5);
+  outline: 2px solid #e74c3c;
+}
+
+.form-radio-primary input[type="radio"]:checked + .form-radio-custom {
+  border-color: #16acc8;
+}
+
+.form-radio-info input[type="radio"]:checked + .form-radio-custom {
+  border-color: #2e86de;
+}
+
+.form-radio-sucess input[type="radio"]:checked + .form-radio-custom {
+  border-color: #26de81;
+}
+
+.form-radio-warning input[type="radio"]:checked + .form-radio-custom {
+  border-color: #f1c40f;
+}
+
+.form-radio-danger input[type="radio"]:checked + .form-radio-custom {
+  border-color: #e74c3c;
+}
