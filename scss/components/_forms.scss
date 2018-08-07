@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &-horizontal {
+    flex-direction: row;
+  }
+
+  &-label {
+    margin: .25em;
+  }
+
+  &-field {
+    border-radius: .125em;
+    border: 1px solid $gray;
+    box-sizing: border-box;
+    padding: .5em;
+    margin: .25em;
+
+    &-rounded {
+      border-radius: 50px; 
+    }
+
+    &[disabled] {
+      opacity: .7;
+      pointer-events: none;
+      cursor:not-allowed;
+    }
+  }
+
+  &-select {
+    background-color: $light-color;
+    box-sizing: border-box;
+    padding: .5em;
+
+    &-rounded {
+      border-radius: 50px;
+    }
+  }
+
+  &-radio {
+    position: relative;
+    box-sizing: border-box;
+    padding: .5em;
+    
+    &-custom {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: $light-color;
+      border: .5rem solid $light-gray;
+      transition: all .2s ease;
+      cursor: pointer;
+    }
+    input[type="radio"] {
+      margin-right: .5em;
+    }
+
+    input[type="radio"]:checked + &-custom{
+      border-color: gray;
+    }
+  }
+}
+
+@each $color, $value in $colors {
+  .form-field-#{$color} {
+    border: 1px solid $value;
+    color: $value;
+
+    &:focus {
+      border-color: rgba($value,.5);
+      outline: 2px solid $value;
+    }
+  }
+}
+
+
+@each $color, $value in $colors {
+  .form-radio-#{$color} {
+    input[type="radio"]:checked + .form-radio-custom {
+      border-color: $value;
+    }
+  }
+}
